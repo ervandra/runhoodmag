@@ -39,7 +39,12 @@ export default function Home() {
           <div className="container mx-auto">
             <div className="flex items-center justify-between mb-16">
               <h2 className="text-2xl md:text-[50px] font-[900]">WATCH</h2>
-              <a href="#" className="uppercase">
+              <a
+                href="https://www.youtube.com/@RunhoodMag"
+                className="uppercase"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 All Videos 🡒
               </a>
             </div>
@@ -47,7 +52,11 @@ export default function Home() {
               <div className="col-span-full md:col-span-7">
                 <div className="watch-item watch-large">
                   <div className="watch-thumbnail mb-5">
-                    <a href="#">
+                    <a
+                      href="https://www.youtube.com/watch?v=t1jMNh3UQLM"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       <img
                         src="/images/watch1.jpg"
                         alt="watch"
@@ -59,7 +68,13 @@ export default function Home() {
                     Running For Dummies
                   </p>
                   <h3 className="watch-title mb-4 text-xl md:text-[32px] font-bold ">
-                    <a href="#">BISA GAK SIH LARI TANPA SMARTWATCH?</a>
+                    <a
+                      href="https://www.youtube.com/watch?v=t1jMNh3UQLM"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      BISA GAK SIH LARI TANPA SMARTWATCH?
+                    </a>
                   </h3>
                   <p className="watch-description text-xl">
                     Kenapa sih, sekarang semua pelari pake smartwatch? Emang
@@ -71,7 +86,11 @@ export default function Home() {
               <div className="col-span-full md:col-span-5 flex flex-col gap-5">
                 <div className="watch-item watch-medium grid grid-cols-2 gap-4 items-center">
                   <div className="watch-thumbnail">
-                    <a href="#">
+                    <a
+                      href="https://www.youtube.com/watch?v=EM8juFYLrRk"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       <img
                         src="/images/watch2.jpg"
                         alt="watch"
@@ -80,12 +99,23 @@ export default function Home() {
                     </a>
                   </div>
                   <h3 className="watch-title text-lg font-bold leading-tight">
-                    AKHIRNYA PUMA KELUARIN SUPER TRAINER! | PUMA Deviate Nitro 3
+                    <a
+                      href="https://www.youtube.com/watch?v=EM8juFYLrRk"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      AKHIRNYA PUMA KELUARIN SUPER TRAINER! | PUMA Deviate Nitro
+                      3
+                    </a>
                   </h3>
                 </div>
                 <div className="watch-item watch-medium grid grid-cols-2 gap-4 items-center">
                   <div className="watch-thumbnail">
-                    <a href="#">
+                    <a
+                      href="https://www.youtube.com/watch?v=XejzOYibuwQ"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       <img
                         src="/images/watch3.jpg"
                         alt="watch"
@@ -94,12 +124,22 @@ export default function Home() {
                     </a>
                   </div>
                   <h3 className="watch-title text-lg font-bold leading-tight">
-                    PELARI PEMULA HARUS TAU INI SEBELUM BELI JAM TANGAN LARI
+                    <a
+                      href="https://www.youtube.com/watch?v=XejzOYibuwQ"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      PELARI PEMULA HARUS TAU INI SEBELUM BELI JAM TANGAN LARI
+                    </a>
                   </h3>
                 </div>
                 <div className="watch-item watch-medium grid grid-cols-2 gap-4 items-center">
                   <div className="watch-thumbnail">
-                    <a href="#">
+                    <a
+                      href="https://www.youtube.com/watch?v=gA85jHU1sWk"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       <img
                         src="/images/watch4.jpg"
                         alt="watch"
@@ -108,12 +148,23 @@ export default function Home() {
                     </a>
                   </div>
                   <h3 className="watch-title text-lg font-bold leading-tight">
-                    SEPATU SERBA BISA DARI PUMA | Unboxing PUMA Deviate Nitro 3
+                    <a
+                      href="https://www.youtube.com/watch?v=gA85jHU1sWk"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      SEPATU SERBA BISA DARI PUMA | Unboxing PUMA Deviate Nitro
+                      3
+                    </a>
                   </h3>
                 </div>
                 <div className="watch-item watch-medium grid grid-cols-2 gap-4 items-center">
                   <div className="watch-thumbnail">
-                    <a href="#">
+                    <a
+                      href="https://www.youtube.com/watch?v=w2qKLTQifPs"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
                       <img
                         src="/images/watch5.jpg"
                         alt="watch"
@@ -122,7 +173,13 @@ export default function Home() {
                     </a>
                   </div>
                   <h3 className="watch-title text-lg font-bold leading-tight">
-                    REKOMENDASI ROTASI SEPATU GLOBAL TENGAH TAHUN 2024!
+                    <a
+                      href="https://www.youtube.com/watch?v=w2qKLTQifPs"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      REKOMENDASI ROTASI SEPATU GLOBAL TENGAH TAHUN 2024!
+                    </a>
                   </h3>
                 </div>
               </div>
@@ -133,7 +190,12 @@ export default function Home() {
           <div className="container mx-auto px-10">
             <div className="flex items-center justify-between mb-16">
               <h2 className="text-2xl md:text-[50px] font-[900]">LATEST</h2>
-              <a href="#" className="uppercase">
+              <a
+                href="https://www.instagram.com/runhoodmag/"
+                className="uppercase"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Follow along on Instagram 🡒
               </a>
             </div>
@@ -164,70 +226,70 @@ export default function Home() {
               >
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest1.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest2.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest3.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest4.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest5.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest1.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest2.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest3.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest4.jpg" alt="latest" />
                     </a>
                   </div>
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="carousel-item">
-                    <a href="#">
+                    <a href="#" rel="noopener noreferrer" target="_blank">
                       <img src="/images/latest5.jpg" alt="latest" />
                     </a>
                   </div>
@@ -240,28 +302,52 @@ export default function Home() {
       <div className="main-contact bg-[#E21D03] py-28 w-full">
         <div className="container mx-auto px-10">
           <div className="flex items-center justify-between">
-            <h2 className="text-white font-[900] text-xl md:text-[50px] leading-tight uppercase m-0">Connect With Us</h2>
-            <a href="#" className="text-white bg-black py-3 px-6 font-bold">
+            <h2 className="text-white font-[900] text-xl md:text-[50px] leading-tight uppercase m-0">
+              Connect With Us
+            </h2>
+            <a
+              href="mailto:admin@athleticacompany.com"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="text-white bg-black py-3 px-6 font-bold"
+            >
               Get in touch
-              </a>
+            </a>
           </div>
         </div>
       </div>
       <div className="main-footer bg-black py-28 w-full">
         <div className="container mx-auto px-10">
-          <h3 className="text-white text-3xl md:text-[32px] text-center md:text-left leading-tight font-bold">Discover<br/>The Running<br/>Culture<br/>in Indonesia</h3>
+          <h3 className="text-white text-3xl md:text-[32px] text-center md:text-left leading-tight font-bold">
+            Discover
+            <br />
+            The Running
+            <br />
+            Culture
+            <br />
+            in Indonesia
+          </h3>
 
           <div className="flex flex-col md:flex-row justify-between items-center mt-20 gap-10">
-            <div className="copyright text-white font-bold order-2 md:order-1">&copy; 2024 RUNHOOD. All Rights Reserved.</div>
+            <div className="copyright text-white font-bold order-2 md:order-1">
+              &copy; 2024 RUNHOOD. All Rights Reserved.
+            </div>
             <div className="links flex gap-4 items-center justify-end order-1 md:order-2">
-              <a href="#">Youtube</a>
-              <a href="#">Instagram</a>
-              <a href="#">Tiktok</a>
-              <a href="#">Strava</a>
+              <a href="https://www.youtube.com/@RunhoodMag/" rel="noopener noreferrer" target="_blank">
+                Youtube
+              </a>
+              <a href="https://www.instagram.com/runhoodmag/" rel="noopener noreferrer" target="_blank">
+                Instagram
+              </a>
+              <a href="https://www.tiktok.com/@runhoodmag?lang=en" rel="noopener noreferrer" target="_blank">
+                Tiktok
+              </a>
+              <a href="https://www.strava.com/clubs/286856" rel="noopener noreferrer" target="_blank">
+                Strava
+              </a>
             </div>
           </div>
         </div>
-
       </div>
     </main>
   );
