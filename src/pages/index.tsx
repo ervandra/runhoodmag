@@ -3,7 +3,8 @@ import { Inter } from "next/font/google";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/effect-fade";
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,15 +25,92 @@ export default function Home() {
       <div className="content w-full overflow-x-hidden">
         <div className="main-banner">
           <div className="slideshow">
-            <img src="/images/banner1.jpg" alt="banner" />
+            <Swiper
+              slidesPerView={1}
+              effect={"fade"}
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, EffectFade]}
+              className="mySlideshow"
+            >
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner1.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner2.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner3.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner4.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner5.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner6.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner7.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner8.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner9.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner10.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner11.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner12.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banner13.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
-        <div className="main-about py-24 bg-black">
-          <div className="max-w-5xl mx-auto px-10">
-            <h1 className="m-0 text-center text-[#E21D03] text-2xl md:text-[32px] leading-snug font-bold">
-              RUNHOOD IS A MEDIA COMMITTED TO FOSTERING THE GROWTH OF SPORTS,
-              WITH A PARTICULAR FOCUS ON PROMOTING RUNNING IN INDONESIA.
+        <div className="main-about py-24 bg-black  px-10">
+          <div className="container mx-auto text-white">
+            <h1 className="mb-10 text-left text-[#E21D03] text-2xl md:text-[32px] leading-snug font-bold">
+            RUNHOOD IS A MEDIA COMMITTED TO FOSTERING THE GROWTH OF SPORTS, WITH A PARTICULAR FOCUS ON PROMOTING RUNNING IN INDONESIA.
             </h1>
+            <p className="md:text-xl mb-4">We are here to inspire as many people as possible through mass sports participation and are committed to support the nation&lsquo;s sporting excellence.</p>
+            <p className="md:text-xl">We believe that sport is the foundation for our nation&lsquo;s well-being, unity, education, and many other positive impacts. </p>
           </div>
         </div>
         <div className="main-watch pt-24 pb-12 px-10">
@@ -187,7 +265,7 @@ export default function Home() {
           </div>
         </div>
         <div className="main-latest pb-24 pt-12">
-          <div className="container mx-auto px-10">
+          <div className="container mx-auto">
             <div className="flex items-center justify-between mb-16">
               <h2 className="text-2xl md:text-[50px] font-[900]">LATEST</h2>
               <a
@@ -333,16 +411,32 @@ export default function Home() {
               &copy; 2024 RUNHOOD. All Rights Reserved.
             </div>
             <div className="links flex gap-4 items-center justify-end order-1 md:order-2">
-              <a href="https://www.youtube.com/@RunhoodMag/" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://www.youtube.com/@RunhoodMag/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Youtube
               </a>
-              <a href="https://www.instagram.com/runhoodmag/" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://www.instagram.com/runhoodmag/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Instagram
               </a>
-              <a href="https://www.tiktok.com/@runhoodmag?lang=en" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://www.tiktok.com/@runhoodmag?lang=en"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Tiktok
               </a>
-              <a href="https://www.strava.com/clubs/286856" rel="noopener noreferrer" target="_blank">
+              <a
+                href="https://www.strava.com/clubs/286856"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
                 Strava
               </a>
             </div>
