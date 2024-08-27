@@ -145,7 +145,7 @@ export default function Home() {
                   <p className="watch-category mb-4 text-xl">
                     Running For Dummies
                   </p>
-                  <h3 className="watch-title mb-4 text-xl md:text-[32px] font-bold ">
+                  <h3 className="watch-title mb-4 text-xl md:text-[32px] font-bold uppercase">
                     <a
                       href="https://www.youtube.com/watch?v=t1jMNh3UQLM"
                       rel="noopener noreferrer"
@@ -176,7 +176,7 @@ export default function Home() {
                       />
                     </a>
                   </div>
-                  <h3 className="watch-title text-lg font-bold leading-tight">
+                  <h3 className="watch-title text-lg font-bold leading-tight uppercase">
                     <a
                       href="https://www.youtube.com/watch?v=EM8juFYLrRk"
                       rel="noopener noreferrer"
@@ -201,7 +201,7 @@ export default function Home() {
                       />
                     </a>
                   </div>
-                  <h3 className="watch-title text-lg font-bold leading-tight">
+                  <h3 className="watch-title text-lg font-bold leading-tight uppercase">
                     <a
                       href="https://www.youtube.com/watch?v=XejzOYibuwQ"
                       rel="noopener noreferrer"
@@ -225,7 +225,7 @@ export default function Home() {
                       />
                     </a>
                   </div>
-                  <h3 className="watch-title text-lg font-bold leading-tight">
+                  <h3 className="watch-title text-lg font-bold leading-tight uppercase">
                     <a
                       href="https://www.youtube.com/watch?v=gA85jHU1sWk"
                       rel="noopener noreferrer"
@@ -250,7 +250,7 @@ export default function Home() {
                       />
                     </a>
                   </div>
-                  <h3 className="watch-title text-lg font-bold leading-tight">
+                  <h3 className="watch-title text-lg font-bold leading-tight uppercase">
                     <a
                       href="https://www.youtube.com/watch?v=w2qKLTQifPs"
                       rel="noopener noreferrer"
