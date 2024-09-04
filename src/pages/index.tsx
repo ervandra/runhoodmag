@@ -119,11 +119,25 @@ export default function Home() {
               <h2 className="text-2xl md:text-[50px] font-[900]">WATCH</h2>
               <a
                 href="https://www.youtube.com/@RunhoodMag"
-                className="uppercase hidden md:block"
+                className="uppercase hidden md:flex items-center gap-2"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                All Videos 🡒
+                All Videos{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
               </a>
             </div>
             <div className="mb-5 md:mb-16 grid grid-cols-1 md:grid-cols-12 gap-10 px-0 md:px-10">
@@ -267,11 +281,25 @@ export default function Home() {
             <div className="px-5 md:px-0">
               <a
                 href="https://www.youtube.com/@RunhoodMag"
-                className="uppercase block md:hidden text-sm"
+                className="uppercase flex items-center gap-2 md:hidden text-sm"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                All Videos 🡒
+                All Videos{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -282,11 +310,25 @@ export default function Home() {
               <h2 className="text-2xl md:text-[50px] font-[900]">LATEST</h2>
               <a
                 href="https://www.instagram.com/runhoodmag/"
-                className="uppercase hidden md:block"
+                className="uppercase hidden md:flex items-center gap-2"
                 rel="noopener noreferrer"
                 target="_blank"
               >
-                Follow along on Instagram 🡒
+                Follow along on Instagram{" "}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                  className="size-6"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
               </a>
             </div>
           </div>
@@ -388,14 +430,28 @@ export default function Home() {
             </div>
           </div>
           <div className="px-5 md:px-0 pt-5 md:pt-0">
-          <a
-                href="https://www.instagram.com/runhoodmag/"
-                className="uppercase block md:hidden text-sm"
-                rel="noopener noreferrer"
-                target="_blank"
+            <a
+              href="https://www.instagram.com/runhoodmag/"
+              className="uppercase flex items-center gap-2 md:hidden text-sm"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Follow along on Instagram{" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="size-6"
               >
-                Follow along on Instagram 🡒
-              </a>
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -420,17 +476,17 @@ export default function Home() {
         <div className="container mx-auto px-5 md:px-10">
           <div className="grid grid-cols-12 gap-5 items-start">
             <div className="col-span-7 md:col-span-full">
-          <h3 className="text-white text-2xl md:text-[32px] text-left leading-tight font-bold">
-            Discover
-            <br />
-            The Running
-            <br />
-            Culture
-            <br />
-            in Indonesia
-          </h3>
-          </div>
-          <div className="links flex flex-col gap-2 items-start justify-end order-1 md:order-2 md:hidden">
+              <h3 className="text-white text-2xl md:text-[32px] text-left leading-tight font-bold">
+                Discover
+                <br />
+                The Running
+                <br />
+                Culture
+                <br />
+                in Indonesia
+              </h3>
+            </div>
+            <div className="links flex flex-col gap-2 items-start justify-end order-1 md:order-2 md:hidden">
               <a
                 href="https://www.youtube.com/@RunhoodMag/"
                 rel="noopener noreferrer"
