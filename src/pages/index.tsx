@@ -24,7 +24,74 @@ export default function Home() {
       </div>
       <div className="content w-full overflow-x-hidden">
         <div className="main-banner">
-          <div className="slideshow">
+          <div className="slideshow block md:hidden">
+            <Swiper
+              slidesPerView={1}
+              effect={"fade"}
+              loop={true}
+              autoplay={{
+                delay: 2000,
+                disableOnInteraction: false,
+              }}
+              modules={[Autoplay, EffectFade]}
+              className="mySlideshow"
+            >
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner1.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner2.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner3.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner4.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner5.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner6.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner7.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner8.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img src="/images/banners/desktop/banner9.jpg" alt="banner" />
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="carousel-item">
+                  <img
+                    src="/images/banners/desktop/banner10.jpg"
+                    alt="banner"
+                  />
+                </div>
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div className="slideshow hidden md:block">
             <Swiper
               slidesPerView={1}
               effect={"fade"}
