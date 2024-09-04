@@ -38,53 +38,53 @@ export default function Home() {
             >
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner1.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner1.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner2.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner2.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner3.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner3.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner4.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner4.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner5.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner5.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner6.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner6.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner7.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner7.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner8.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner8.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
-                  <img src="/images/banners/desktop/banner9.jpg" alt="banner" />
+                  <img src="/images/banners/mobile/banner9.jpg" alt="banner" />
                 </div>
               </SwiperSlide>
               <SwiperSlide>
                 <div className="carousel-item">
                   <img
-                    src="/images/banners/desktop/banner10.jpg"
+                    src="/images/banners/mobile/banner10.jpg"
                     alt="banner"
                   />
                 </div>
