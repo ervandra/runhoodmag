@@ -14,7 +14,7 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
     >
       <div className="header bg-black py-7 md:py-10 w-full">
-        <div className="container mx-auto px-10">
+        <div className="container mx-auto px-5 md:px-10">
           <div className="flex  items-center">
             <div className="logo">
               <img src="/images/logo.png" alt="Logo" className="h-3 md:h-5" />
@@ -92,8 +92,8 @@ export default function Home() {
             </Swiper>
           </div>
         </div>
-        <div className="main-about py-8 md:py-24 bg-black px-5 md:px-10">
-          <div className="container mx-auto text-white">
+        <div className="main-about py-8 md:py-24 bg-black">
+          <div className="container mx-auto text-white px-5 md:px-10">
             <h1 className="mb-10 text-left text-[#E21D03] text-base md:text-[32px] leading-snug font-bold">
               RUNHOOD IS A MEDIA COMMITTED TO FOSTERING THE GROWTH OF SPORTS,
               WITH A PARTICULAR FOCUS ON PROMOTING RUNNING IN INDONESIA.
@@ -306,7 +306,7 @@ export default function Home() {
         </div>
         <div className="main-latest pb-5 md:pb-24 pt-0 md:pt-12">
           <div className="container mx-auto">
-            <div className="flex items-center justify-between mb-3 md:mb-16 mx-5 md:mx-0 pt-5 border-t md:border-0">
+            <div className="flex items-center justify-between mb-3 md:mb-16 mx-5 md:mx-0 px-0 md:px-10 pt-5 border-t md:border-0">
               <h2 className="text-2xl md:text-[50px] font-[900]">LATEST</h2>
               <a
                 href="https://www.instagram.com/runhoodmag/"
