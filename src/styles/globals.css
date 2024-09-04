@@ -38,5 +38,5 @@ body {
 }
 
 .links a {
-  @apply text-white font-bold uppercase;
+  @apply text-sm md:text-base text-white font-bold uppercase;
 }
