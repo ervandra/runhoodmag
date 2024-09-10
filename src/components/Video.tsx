@@ -5,14 +5,21 @@ export type VideoType = {
     videoId: string;
   };
   snippet: {
+    publishedAt: string;
     title: string;
     description: string;
     channelTitle: string;
     thumbnails: {
+      maxres: {
+        url: string;
+      }
       medium: {
         url: string;
       };
     };
+  };
+  contentDetails: {
+    duration: string;
   };
 }
 
@@ -57,7 +64,7 @@ export default function Video({ video }: { video: VideoType[] }) {
                   target="_blank"
                 >
                   <img
-                    src={firstVideo.snippet.thumbnails.medium.url}
+                    src={firstVideo.snippet.thumbnails.maxres.url}
                     alt="watch"
                     className="w-full h-auto"
                   />

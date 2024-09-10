@@ -443,11 +443,34 @@ export async function getStaticProps() {
   const YOUTUBE_API_KEY = 'AIzaSyAxwxP8RbucUE5ZbbsoTvcAsakhH76qI9I'; // Replace with your YouTube API key
   const YOUTUBE_CHANNEL_ID = 'UC96DJN2hL3qaLXJK5MKyuWQ'; // Replace with your channel ID
 
+  // const youtubeRes = await fetch(
+  //   `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${YOUTUBE_CHANNEL_ID}&order=date&part=snippet,id&type=video`
+  // );
+  // // Step 1: Fetch the latest videos (limit to 4)
   const youtubeRes = await fetch(
-    `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${YOUTUBE_CHANNEL_ID}&order=date&part=snippet,id&type=video`
+    `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${YOUTUBE_CHANNEL_ID}&order=date&type=video&part=snippet,id&maxResults=50`
   );
   const youtubeData = await youtubeRes.json();
-  const video = youtubeData.items.slice(0,5);
+
+  // Step 2: Extract video IDs
+  const videoIds = youtubeData.items.map((item: { id: { videoId: string } }) => item.id.videoId).join(',');
+
+  // Step 3: Fetch video details
+  const videoDetailsRes = await fetch(
+    `https://www.googleapis.com/youtube/v3/videos?key=${YOUTUBE_API_KEY}&id=${videoIds}&part=contentDetails,snippet`
+  );
+  const videoDetailsData = await videoDetailsRes.json();
+
+  // Step 4: Filter out shorts (videos < 60 seconds)
+  const filteredVideos = videoDetailsData.items.filter((video: VideoType) => {
+    const duration = video.contentDetails.duration;
+    const seconds = convertIso8601ToSeconds(duration);
+    return seconds >= 62; // Exclude videos < 60 seconds
+  });
+
+
+  // Get the latest 4 videos (after filtering)
+  const latestVideos = filteredVideos.slice(0, 4); // Get up to 4 videos
 
   // Fetch Instagram Posts
   // const INSTAGRAM_ACCESS_TOKEN = 'YOUR_ACCESS_TOKEN'; // Replace with your Instagram access token
@@ -461,10 +484,19 @@ export async function getStaticProps() {
 
   return {
     props: {
-      video,
+      video: latestVideos,
       posts:null,
     },
     revalidate: 86400, // Revalidate every 24 hours (86400 seconds)
   };
 }
 
+// Helper function to convert ISO 8601 duration to seconds
+function convertIso8601ToSeconds(duration: string): number {
+  const match = duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
+  if(match === null) return 0;
+  const hours = match[1] ? parseInt(match[1]) * 3600 : 0;
+  const minutes = match[2] ? parseInt(match[2]) * 60 : 0;
+  const seconds = match[3] ? parseInt(match[3]) : 0;
+  return hours + minutes + seconds;
+}
