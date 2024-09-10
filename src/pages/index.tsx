@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { Inter } from "next/font/google";
+import Video from "../components/Video";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,7 +9,8 @@ import { Autoplay, EffectFade, Pagination } from "swiper/modules";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home() {
+export default function Home({ video, posts }) {
+  console.log('video', video, posts);
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
@@ -180,197 +182,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="main-watch pt-8 md:pt-24 pb-5 md:pb-12">
-          <div className="container mx-auto">
-            <div className="flex items-center justify-between mb-5 md:mb-16 px-5 md:px-10">
-              <h2 className="text-2xl md:text-[50px] font-[900]">WATCH</h2>
-              <a
-                href="https://www.youtube.com/@RunhoodMag"
-                className="uppercase hidden md:flex items-center gap-2"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                All Videos{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="size-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </a>
-            </div>
-            <div className="mb-5 md:mb-16 grid grid-cols-1 md:grid-cols-12 gap-10 px-0 md:px-10">
-              <div className="col-span-full md:col-span-7">
-                <div className="watch-item watch-large">
-                  <div className="watch-thumbnail mb-5">
-                    <a
-                      href="https://www.youtube.com/watch?v=t1jMNh3UQLM"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <img
-                        src="/images/watch1.jpg"
-                        alt="watch"
-                        className="w-full h-auto"
-                      />
-                    </a>
-                  </div>
-                  <div className="px-5 md:px-0">
-                    <p className="watch-category mb-2 md:mb-4 text-xs md:text-xl uppercase">
-                      Running For Dummies
-                    </p>
-                    <h3 className="watch-title mb-4 text-2xl md:text-[32px] font-bold uppercase">
-                      <a
-                        href="https://www.youtube.com/watch?v=t1jMNh3UQLM"
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        BISA GAK SIH LARI TANPA SMARTWATCH?
-                      </a>
-                    </h3>
-                    <p className="watch-description text-sm md:text-xl leading-tight">
-                      Kenapa sih, sekarang semua pelari pake smartwatch? Emang
-                      seperlu itu ya? 🤔 Eits, makanya di video ini Minhood
-                      jelasin riset tentang smartwatch dan apa aja kegunaannya.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-span-full md:col-span-5 flex flex-col gap-4 md:gap-5 px-5 md:px-0">
-                <div className="watch-item watch-medium grid grid-cols-2 gap-4 items-center">
-                  <div className="watch-thumbnail">
-                    <a
-                      href="https://www.youtube.com/watch?v=EM8juFYLrRk"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <img
-                        src="/images/watch2.jpg"
-                        alt="watch"
-                        className="w-full h-auto"
-                      />
-                    </a>
-                  </div>
-                  <h3 className="watch-title text-sm md:text-lg font-bold leading-tight uppercase">
-                    <a
-                      href="https://www.youtube.com/watch?v=EM8juFYLrRk"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      AKHIRNYA PUMA KELUARIN SUPER TRAINER! | PUMA Deviate Nitro
-                      3
-                    </a>
-                  </h3>
-                </div>
-                <div className="watch-item watch-medium grid grid-cols-2 gap-4 items-center">
-                  <div className="watch-thumbnail">
-                    <a
-                      href="https://www.youtube.com/watch?v=XejzOYibuwQ"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <img
-                        src="/images/watch3.jpg"
-                        alt="watch"
-                        className="w-full h-auto"
-                      />
-                    </a>
-                  </div>
-                  <h3 className="watch-title text-sm md:text-lg font-bold leading-tight uppercase">
-                    <a
-                      href="https://www.youtube.com/watch?v=XejzOYibuwQ"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      PELARI PEMULA HARUS TAU INI SEBELUM BELI JAM TANGAN LARI
-                    </a>
-                  </h3>
-                </div>
-                <div className="watch-item watch-medium grid grid-cols-2 gap-4 items-center">
-                  <div className="watch-thumbnail">
-                    <a
-                      href="https://www.youtube.com/watch?v=gA85jHU1sWk"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <img
-                        src="/images/watch4.jpg"
-                        alt="watch"
-                        className="w-full h-auto"
-                      />
-                    </a>
-                  </div>
-                  <h3 className="watch-title text-sm md:text-lg font-bold leading-tight uppercase">
-                    <a
-                      href="https://www.youtube.com/watch?v=gA85jHU1sWk"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      SEPATU SERBA BISA DARI PUMA | Unboxing PUMA Deviate Nitro
-                      3
-                    </a>
-                  </h3>
-                </div>
-                <div className="watch-item watch-medium grid grid-cols-2 gap-4 items-center">
-                  <div className="watch-thumbnail">
-                    <a
-                      href="https://www.youtube.com/watch?v=w2qKLTQifPs"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      <img
-                        src="/images/watch5.jpg"
-                        alt="watch"
-                        className="w-full h-auto"
-                      />
-                    </a>
-                  </div>
-                  <h3 className="watch-title text-sm md:text-lg font-bold leading-tight uppercase">
-                    <a
-                      href="https://www.youtube.com/watch?v=w2qKLTQifPs"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                    >
-                      REKOMENDASI ROTASI SEPATU GLOBAL TENGAH TAHUN 2024!
-                    </a>
-                  </h3>
-                </div>
-              </div>
-            </div>
-            <div className="px-5 md:px-0">
-              <a
-                href="https://www.youtube.com/@RunhoodMag"
-                className="uppercase flex items-center gap-2 md:hidden text-sm"
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                All Videos{" "}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={1.5}
-                  stroke="currentColor"
-                  className="size-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
+        <Video video={video} />
         <div className="main-latest pb-5 md:pb-24 pt-0 md:pt-12">
           <div className="container mx-auto">
             <div className="flex items-center justify-between mb-3 md:mb-16 mx-5 md:mx-0 px-0 md:px-10 pt-5 border-t md:border-0">
@@ -617,6 +429,7 @@ export default function Home() {
                 target="_blank"
               >
                 Strava
+
               </a>
             </div>
           </div>
@@ -625,3 +438,34 @@ export default function Home() {
     </main>
   );
 }
+
+export async function getStaticProps() {
+  // Fetch YouTube Video
+  const YOUTUBE_API_KEY = 'AIzaSyAxwxP8RbucUE5ZbbsoTvcAsakhH76qI9I'; // Replace with your YouTube API key
+  const YOUTUBE_CHANNEL_ID = 'UC96DJN2hL3qaLXJK5MKyuWQ'; // Replace with your channel ID
+
+  const youtubeRes = await fetch(
+    `https://www.googleapis.com/youtube/v3/search?key=${YOUTUBE_API_KEY}&channelId=${YOUTUBE_CHANNEL_ID}&order=date&part=snippet,id&type=video`
+  );
+  const youtubeData = await youtubeRes.json();
+  const video = youtubeData.items.slice(0,5);
+
+  // Fetch Instagram Posts
+  // const INSTAGRAM_ACCESS_TOKEN = 'YOUR_ACCESS_TOKEN'; // Replace with your Instagram access token
+  // const INSTAGRAM_USER_ID = 'YOUR_USER_ID'; // Replace with your Instagram User ID
+
+  // const instagramRes = await fetch(
+  //   `https://graph.instagram.com/${INSTAGRAM_USER_ID}/media?fields=id,caption,media_url&access_token=${INSTAGRAM_ACCESS_TOKEN}`
+  // );
+  // const instagramData = await instagramRes.json();
+  // const posts = instagramData.data || [];
+
+  return {
+    props: {
+      video,
+      posts:null,
+    },
+    revalidate: 86400, // Revalidate every 24 hours (86400 seconds)
+  };
+}
+
