@@ -1,4 +1,22 @@
-export default function Video({ video }) {
+import react from "react";
+
+export type VideoType = {
+  id: {
+    videoId: string;
+  };
+  snippet: {
+    title: string;
+    description: string;
+    channelTitle: string;
+    thumbnails: {
+      medium: {
+        url: string;
+      };
+    };
+  };
+}
+
+export default function Video({ video }: { video: VideoType[] }) {
   const firstVideo = video[0];
   const otherVideos = video.slice(1, 4);
   return (

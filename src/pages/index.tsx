@@ -1,16 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import { Inter } from "next/font/google";
-import Video from "../components/Video";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-fade";
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+import Video, { VideoType } from "../components/Video";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ video, posts }) {
-  console.log('video', video, posts);
+export default function Home({ video }: { video: VideoType[] }) {
   return (
     <main
       className={`flex min-h-screen flex-col items-center justify-between ${inter.className}`}
